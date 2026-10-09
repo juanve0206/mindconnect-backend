@@ -3,6 +3,11 @@
 Backend de **MindConnect** (apoyo psicológico preventivo con grupos moderados por IA y citas a bajo costo),
 desarrollado con **Django** y **Django REST Framework**. Proyecto final de Ingeniería de Software I, Universidad de La Guajira.
 
+## Requisitos
+
+- Python 3.11.1
+- Django 5.2.12 (compatible con Python 3.11)
+
 ## Estructura (`core/`)
 
 | Archivo | Para qué sirve |
@@ -16,8 +21,10 @@ desarrollado con **Django** y **Django REST Framework**. Proyecto final de Ingen
 
 ## Instalación
 
+En Windows, instala Python 3.11.1 y crea el entorno virtual con:
+
 ```bash
-python -m venv venv
+py -3.11 -m venv venv
 venv\Scripts\activate          # Windows  (Mac/Linux: source venv/bin/activate)
 pip install -r requirements.txt
 python manage.py migrate
@@ -25,6 +32,8 @@ python manage.py createsuperuser
 python manage.py cargar_demo   # grupos, profesionales, test y líneas de ayuda de ejemplo
 python manage.py runserver
 ```
+
+En macOS/Linux, usa `python3.11 -m venv venv` para crear el entorno virtual.
 
 Servidor: http://127.0.0.1:8000/ (redirige a `/api/`). Panel de administración: `/admin/`.
 Cuentas demo de profesionales: `psicologa1` y `psicologo2`, contraseña `Demo12345` (solo para pruebas).
