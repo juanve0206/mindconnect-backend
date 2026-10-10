@@ -21,6 +21,17 @@ desarrollado con **Django** y **Django REST Framework**. Proyecto final de Ingen
 
 ## Instalación
 
+### Descargar el proyecto
+
+El repositorio es público. Se puede descargar el proyecto completo como [archivo ZIP](https://github.com/juanve0206/mindconnect-backend/archive/refs/heads/main.zip) o clonarlo con:
+
+```bash
+git clone https://github.com/juanve0206/mindconnect-backend.git
+cd mindconnect-backend
+```
+
+### Ejecutarlo en Windows
+
 En Windows, instala Python 3.11.1 y crea el entorno virtual con:
 
 ```bash
@@ -36,6 +47,7 @@ python manage.py runserver
 En macOS/Linux, usa `python3.11 -m venv venv` para crear el entorno virtual.
 
 Servidor: http://127.0.0.1:8000/ (redirige a `/api/`). Panel de administración: `/admin/`.
+La advertencia amarilla de Django sobre el servidor de desarrollo al ejecutar `runserver` es normal en pruebas locales; no es un error y no impide usar la aplicación. `runserver` está destinado al computador local, no a publicar el sitio en Internet.
 Cuentas demo de profesionales: `psicologa1` y `psicologo2`, contraseña `Demo12345` (solo para pruebas).
 
 ## Autenticación
