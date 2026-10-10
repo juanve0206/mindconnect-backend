@@ -46,6 +46,8 @@ python manage.py runserver
 
 En macOS/Linux, usa `python3.11 -m venv venv` para crear el entorno virtual.
 
+La carpeta `venv/` no se sube a GitHub porque se crea de nuevo en cada computador; las dependencias necesarias están en `requirements.txt`. El archivo `.env.example` muestra la variable de entorno opcional. Django no carga archivos `.env` automáticamente: si necesitas definir una clave propia en PowerShell, hazlo antes de iniciar el servidor con `$env:DJANGO_SECRET_KEY = "tu-clave-local"`. No compartas ni subas un `.env` con claves privadas.
+
 Servidor: http://127.0.0.1:8000/ (redirige a `/api/`). Panel de administración: `/admin/`.
 La advertencia amarilla de Django sobre el servidor de desarrollo al ejecutar `runserver` es normal en pruebas locales; no es un error y no impide usar la aplicación. `runserver` está destinado al computador local, no a publicar el sitio en Internet.
 Cuentas demo de profesionales: `psicologa1` y `psicologo2`, contraseña `Demo12345` (solo para pruebas).
