@@ -41,8 +41,11 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py cargar_demo   # grupos, profesionales, test y líneas de ayuda de ejemplo
+python manage.py cargar_100_registros  # completa las 19 tablas de core con datos sintéticos
 python manage.py runserver
 ```
+
+`cargar_100_registros` agrega filas hasta que cada tabla del módulo `core` tenga al menos 100 registros; no borra los datos existentes y se puede ejecutar más de una vez. Los perfiles y cuentas creados son de demostración, tienen contraseñas inutilizables y no representan personas ni servicios reales. Las líneas de ayuda generadas quedan inactivas.
 
 En macOS/Linux, usa `python3.11 -m venv venv` para crear el entorno virtual.
 
